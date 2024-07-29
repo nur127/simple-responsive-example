@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More About Grid</title>
+    <style>
+        body{
+            max-width: 720px;
+            margin: 0 auto;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 20px;
+            grid-template-rows: repeat(3,150px) 30px 30px;
+        }
+        .item{
+            background-color: gray;
+            /* border-radius: 10px; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #item-1{
+            grid-row: span 5;
+        }
+
+        #item-11 ,#item-12{
+            grid-column: span 3;
+        }
+        #item-6 , #item-7 , #item-9 , #item-10{
+            background-color: tomato;
+
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>More About Grid</h1>
+    <div class="container">
+        <div class="item" id="item-1">Box-1</div>
+        <div class="item" id="item-2">Box-2</div>
+        <div class="item" id="item-3">Box-3</div>
+        <div class="item" id="item-4">Box-4</div>
+        <div class="item" id="item-5">Box-5</div>
+        <div class="item" id="item-6">Box-6</div>
+        <div class="item" id="item-7">Box-7</div>
+        <div class="item" id="item-8">Box-8</div>
+        <div class="item" id="item-9">Box-9</div>
+        <div class="item" id="item-10">Box-10</div>
+        <div class="item" id="item-11">Box-11</div>
+        <div class="item" id="item-12">Box-12</div>
+    </div>
+</body>
+</html>
